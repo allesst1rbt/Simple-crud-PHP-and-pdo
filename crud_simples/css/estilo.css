@@ -14,7 +14,7 @@
 li.list-group-item.active {
 	background-color: #fff;
 	border-color: #000f99;
-    border-left:solid 10px #001799;
+   	border-left:solid 10px #001799;
 }
 
 li a {
