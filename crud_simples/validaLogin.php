@@ -1,17 +1,13 @@
 <?php
     session_start();
     $usuarios_app = array(
-        array('email' => 'verme@teste.com', 'senha' =>'verme123'),
-        array('email' => 'carlo@verme.com', 'senha' =>'verme12')
+        array('email' => 'User@test.com', 'senha' =>'123456'),
+        array('email' => 'All3s@test.com', 'senha' =>'123459876')
     );
     $autentica = false;
  
  
- /*print_r($_POST);
-  echo ' <br>';
-  echo $_POST['email'];
-  echo ' <br>';
-  echo $_POST['senha'];*/
+
   foreach ($usuarios_app as $user) {
    if ($user['email'] == $_POST['email'] && $user['senha'] == $_POST['senha']) {
       $autentica = true;
