@@ -1,0 +1,32 @@
+.menu {
+	margin-bottom: 25px;
+}
+
+.app {
+	margin-top: 25px;
+}
+
+.pagina {
+	border:solid 1px #DFDFDF;
+	padding:25px !important;
+}
+
+li.list-group-item.active {
+	background-color: #fff;
+	border-color: #000f99;
+    border-left:solid 10px #001799;
+}
+
+li a {
+	color: #212129;
+}
+
+li a:hover {
+	text-decoration: none;
+}
+
+h4 {
+	color: #002999 !important;
+}
+
+
