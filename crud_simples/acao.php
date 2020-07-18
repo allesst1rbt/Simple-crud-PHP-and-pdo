@@ -12,16 +12,16 @@
         $user->__set('telefone', $_POST['telefone']);
         $user->__set('objetivo', $_POST['objetivo']);
         $user->__set('descricao', $_POST['descricao']);
-		$conexao = new Conexao();
+	$conexao = new Conexao();
         $Userservice = new UserService($conexao, $user);
-		$Userservice->cadastro();
+	$Userservice->cadastro();
 	header('Location: index.php?cadastro=1');
     }
     elseif($acao == 'recuperar'){
 		$user = new User();
 		$conexao = new Conexao();
 		$Userservice = new UserService($conexao, $user);
-        $Users = $Userservice->recuperar();
+      		$Users = $Userservice->recuperar();
         
     }
 	elseif ($acao == 'remover') {
@@ -29,7 +29,7 @@
 		$user->__set('email',$_GET['email']);
 
 		$conexao = new Conexao();
-        $Userservice = new UserService($conexao, $user);
+        	$Userservice = new UserService($conexao, $user);
 		$Userservice->remover();
 		header('Location: configs.php');
 	}
