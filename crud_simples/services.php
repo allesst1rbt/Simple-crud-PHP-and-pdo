@@ -44,17 +44,6 @@ class UserService{
         $stmt->bindValue(':email', $this->user->__get('email'));
         $stmt->execute();
     }
-    public function atualizar(){
-        $query='';
-        $stmt=$this->conexao->prepare($query);
-        $stmt->bindValue(1, $this->user->__get('nome'));
-        $stmt->bindValue(2, $this->user->__get('email'));
-        $stmt->bindValue(3, $this->user->__get('objetivo'));
-        $stmt->bindValue(4, $this->user->__get('descricao'));
-        $stmt->bindValue(5, $this->user->__get('telefone'));
-		$stmt->execute();
-
-    }
         
 }
 
